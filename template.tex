@@ -18,6 +18,15 @@
 Тогда математическое ожидание оценки функции оценки перспектив будет равно
 \[
 E_0 \left( u \left( \frac{\Lambda_T}{\Lambda_0} (S_T - X) \right) \right) = \int u \left( \frac{\Lambda_T}{\Lambda_0} (S_T - X) \right) df (\Lambda_T, S_T) ,
-\] 
+\]
 где $S_T$ и $\Lambda_T$ есть решение предыдущего уравнения. Имеем
+\begin{equation}
+\ln\Lambda_T = \ln\Lambda_0 - \left(r + \frac{1}{2}\left( \frac{\mu - r}{\sigma}\right)^2 \right) T - \frac{\mu - r}{\sigma} \sqrt{T} \varepsilon,
+\end{equation}
+где  $\varepsilon \sim N(0,1)$, $S_0$ ---  начальная стоимость портфеля. Тогда, используя (1), получим
+\begin{multline}
+E_0 \left( u \left( \frac{\Lambda_T}{\Lambda_0} (S_T - X) \right) \right) = -\int\limits_{S_T = X}^{+\infty} \left( \frac{\Lambda_T(\varepsilon)}{\Lambda_0}
+(S_T(\varepsilon) - X) \right)^\alpha dw^+(1 - F(\varepsilon)) - \\ - \lambda \int\limits_{S_T = -\infty}^X \left( \frac{\Lambda_T(\varepsilon)}{\Lambda_0}
+(X - S_T(\varepsilon)) \right)^\beta dw^-(F(\varepsilon)).
+\end{multline}
 \end{document}
